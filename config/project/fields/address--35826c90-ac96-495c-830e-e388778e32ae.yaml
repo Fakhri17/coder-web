@@ -1,0 +1,19 @@
+columnSuffix: ztsascgp
+contentColumnType: text
+fieldGroup: a6cb0b36-6e63-4910-aeb5-39091b8dcfaf # Common
+handle: address
+instructions: null
+name: Address
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

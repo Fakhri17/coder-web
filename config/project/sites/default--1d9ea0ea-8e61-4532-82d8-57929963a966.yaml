@@ -1,9 +1,8 @@
 baseUrl: $PRIMARY_SITE_URL
-enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: coder-web
+name: Coder-Web
 primary: true
-siteGroup: 69f811d2-852f-494c-aa25-fb7fab56f551 # coder-web
+siteGroup: 1dcf6b65-1c7f-4cca-af8c-eba87c4393b7 # Coder-Web
 sortOrder: 1

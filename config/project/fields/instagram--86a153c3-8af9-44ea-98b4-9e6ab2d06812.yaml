@@ -1,0 +1,14 @@
+columnSuffix: lxnfuuiy
+contentColumnType: string(255)
+fieldGroup: a6cb0b36-6e63-4910-aeb5-39091b8dcfaf # Common
+handle: instagram
+instructions: null
+name: Instagram
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

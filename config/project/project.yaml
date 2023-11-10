@@ -1,17 +1,47 @@
-dateModified: 1699460562
+dateModified: 1699630003
 email:
-  fromEmail: admin@gmail.conm
-  fromName: coder-web
+  fromEmail: fakhricoffe@gmail.com
+  fromName: Coder-Web
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
+fs:
+  featuredImage:
+    hasUrls: true
+    name: 'Featured Image'
+    settings:
+      path: settings/images
+    type: craft\fs\Local
+    url: $ASSETS_WEB_URL
 meta:
   __names__:
-    43edb0eb-2c1c-4752-a030-235ec8e2c8a5: coder-web # coder-web
-    69f811d2-852f-494c-aa25-fb7fab56f551: coder-web # coder-web
-    d60f2067-308e-4327-8413-501a52974d39: Common # Common
+    0b592af1-3215-43f0-8197-d8e73aeee7dd: Default # Default
+    0beff7b2-4667-4eb5-89e3-8fb0083cb6d4: 'Division Logo' # Division Logo
+    1d9ea0ea-8e61-4532-82d8-57929963a966: Coder-Web # Coder-Web
+    1da5e5cf-595b-4825-a9e6-737890a78b7c: 'Table Of Content' # Table Of Content
+    1dcf6b65-1c7f-4cca-af8c-eba87c4393b7: Coder-Web # Coder-Web
+    2f7d1591-436d-4912-830a-229b8653f5b1: 'Featured Image' # Featured Image
+    9a0a6eb4-4adc-49dc-82f1-e27208388163: Summary # Summary
+    20d347c1-eb4a-488f-8376-0c452c401749: 'Site Info' # Site Info
+    31f1ac53-3f8d-4e4d-b32d-7d0d0a3d385b: Gallery # Gallery
+    52ddd013-6f84-448d-8d0b-0ce88df90727: 'Featured Image' # Featured Image
+    56ac2769-bf4b-479e-89cb-6f9d12e26216: 'Member Photos' # Member Photos
+    86a153c3-8af9-44ea-98b4-9e6ab2d06812: Instagram # Instagram
+    093d1887-8655-409f-a8c2-ce25ed825931: Default # Default
+    571eece9-cb80-4552-a33f-9537317c8124: body # body
+    868df16e-1857-42c9-9640-36aaba6424a8: 'Nama Member' # Nama Member
+    877b4643-df21-4f3f-a0df-3d4e48a5883d: Heading # Heading
+    35826c90-ac96-495c-830e-e388778e32ae: Address # Address
+    37934a56-4514-46fd-b0b9-253e8bf86921: 'Division Member' # Division Member
+    54892d51-6af3-47f5-a6de-7f94ea88fcc7: Body # Body
+    a6cb0b36-6e63-4910-aeb5-39091b8dcfaf: Common # Common
+    a9e90adf-8bc5-4757-a48d-1029cbca4a23: Jabatan # Jabatan
+    b9a9ef00-5950-4209-8ce3-9b5cec706af0: Email # Email
+    ba94ce7b-bf33-4fb7-842c-06a122d4bf99: Youtube # Youtube
+    cafe3a36-41cb-4513-b63c-9cb7a1ea9555: Subheading # Subheading
+    da5645d4-6604-427e-96f8-3d2acac6a8e2: Subtitle # Subtitle
+    ee3bb186-f67e-436b-b002-3575a3002a13: Division # Division
+    f7d56ebf-8a70-409c-9292-78cc1a05a95e: Blog # Blog
+    fb22f8e2-cb05-43ee-9f3a-7133912c9a40: Icons # Icons
+    ff9faf4d-060f-4078-bd12-b478a0d6d086: 'Icons Class' # Icons Class
 plugins:
   admin-bar:
     edition: standard
@@ -53,6 +83,286 @@ plugins:
     edition: lite
     enabled: true
     schemaVersion: 4.1.0
+    settings:
+      apiKey: mvtntgtouqtpyitnkjmmnlxwrzcicihd
+      blowfishHashCost:
+        __assoc__:
+          -
+            - threshold
+            - 13
+      contentSecurityPolicy:
+        __assoc__:
+          -
+            - canFail
+            - true
+      contentSecurityPolicySettings:
+        __assoc__:
+          -
+            - enabled
+            - false
+          -
+            - enforce
+            - false
+          -
+            - header
+            - true
+          -
+            - directives
+            -
+              -
+                - 1
+                - default-src
+                - '''self'''
+      cooldownDuration:
+        __assoc__:
+          -
+            - threshold
+            - 300
+      cors:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      craftFilePermissions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      craftFolderPermissions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      craftFoldersAboveWebRoot:
+        __assoc__:
+          -
+            - canFail
+            - true
+      criticalCraftUpdates:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      criticalPluginUpdates:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      defaultDirMode:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 509
+      defaultFileMode:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 436
+      defaultTokenDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 86400
+      devMode:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      disabledTests: null
+      elevatedSessionDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 300
+      enableCsrfProtection:
+        __assoc__:
+          -
+            - canFail
+            - true
+      expectCT:
+        __assoc__:
+          -
+            - canFail
+            - true
+      headerProtectionSettings:
+        __assoc__:
+          -
+            - enabled
+            - true
+          -
+            - headers
+            -
+              -
+                - true
+                - Referrer-Policy
+                - no-referrer-when-downgrade
+              -
+                - true
+                - Strict-Transport-Security
+                - max-age=15552000
+              -
+                - true
+                - X-Content-Type-Options
+                - nosniff
+              -
+                - true
+                - X-Frame-Options
+                - SAMEORIGIN
+              -
+                - true
+                - X-Xss-Protection
+                - '1; mode=block'
+      highSecurityLevel: false
+      httpsControlPanel:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      httpsFrontEnd:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      integrationSettings: null
+      invalidLoginWindowDuration:
+        __assoc__:
+          -
+            - threshold
+            - 3600
+      maxInvalidLogins:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 5
+      monitor: false
+      notificationEmailAddresses: fakhricoffe@gmail.com
+      phpComposerVersion:
+        __assoc__:
+          -
+            - canFail
+            - true
+      phpVersion:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - thresholds
+            -
+              __assoc__:
+                -
+                  - '8.0'
+                  - '2023-11-26'
+                -
+                  - '8.1'
+                  - '2024-11-25'
+                -
+                  - '8.2'
+                  - '2025-12-08'
+      preventUserEnumeration:
+        __assoc__:
+          -
+            - canFail
+            - true
+      referrerPolicy:
+        __assoc__:
+          -
+            - canFail
+            - true
+      rememberedUserSessionDuration:
+        __assoc__:
+          -
+            - threshold
+            - 12096004
+      requireEmailVerification:
+        __assoc__:
+          -
+            - canFail
+            - true
+      sanitizeSvgUploads:
+        __assoc__:
+          -
+            - canFail
+            - true
+      sendPoweredByHeader:
+        __assoc__:
+          -
+            - canFail
+            - false
+      strictTransportSecurity:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 15552000
+      testToEmailAddress:
+        __assoc__:
+          -
+            - canFail
+            - true
+      translationDebugOutput:
+        __assoc__:
+          -
+            - canFail
+            - true
+      useSecureCookies:
+        __assoc__:
+          -
+            - canFail
+            - true
+      userSessionDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 3600
+      verificationCodeDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 86400
+      webAliasInSiteBaseUrl:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      webAliasInVolumeBaseUrl:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      xContentTypeOptions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      xFrameOptions:
+        __assoc__:
+          -
+            - canFail
+            - true
   super-table:
     edition: standard
     enabled: true
@@ -68,7 +378,7 @@ plugins:
 system:
   edition: solo
   live: true
-  name: coder-web
+  name: Coder-Web
   schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
 users:

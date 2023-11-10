@@ -1,0 +1,70 @@
+fieldLayouts:
+  14988f20-f612-4687-b06d-0942f5a5cf14:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cade2108-f662-4cc3-87c2-9f0ddd547f61
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0beff7b2-4667-4eb5-89e3-8fb0083cb6d4 # Division Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b824e38-3345-4111-9df8-1d61767a50f8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 37934a56-4514-46fd-b0b9-253e8bf86921 # Division Member
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa45c3d2-150a-4be3-b31c-81b5f74661ce
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2cae8552-4ca6-4f0f-9bbd-fd16e099fc6c
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: ee3bb186-f67e-436b-b002-3575a3002a13 # Division
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

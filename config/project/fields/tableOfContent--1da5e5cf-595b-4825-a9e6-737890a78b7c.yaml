@@ -1,0 +1,21 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a6cb0b36-6e63-4910-aeb5-39091b8dcfaf # Common
+handle: tableOfContent
+instructions: null
+name: 'Table Of Content'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 1219301422
+  contentTable: '{{%stc_tableofcontent}}'
+  fieldLayout: table
+  maxRows: null
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: null
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField
