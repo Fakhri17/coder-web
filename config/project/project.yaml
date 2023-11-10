@@ -1,0 +1,79 @@
+dateModified: 1699460562
+email:
+  fromEmail: admin@gmail.conm
+  fromName: coder-web
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+meta:
+  __names__:
+    43edb0eb-2c1c-4752-a030-235ec8e2c8a5: coder-web # coder-web
+    69f811d2-852f-494c-aa25-fb7fab56f551: coder-web # coder-web
+    d60f2067-308e-4327-8413-501a52974d39: Common # Common
+plugins:
+  admin-bar:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.1.0
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  fastcgi-cache-bust:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  phone-number:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  retcon:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  sherlock:
+    edition: lite
+    enabled: true
+    schemaVersion: 4.1.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  template-select:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.0.0
+  wordsmith:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0.0
+system:
+  edition: solo
+  live: true
+  name: coder-web
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
