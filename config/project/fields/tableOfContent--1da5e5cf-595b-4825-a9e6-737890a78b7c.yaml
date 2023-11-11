@@ -7,7 +7,30 @@ name: 'Table Of Content'
 searchable: false
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 1219301422
+  changedFieldIndicator: 1505290228
+  columns:
+    __assoc__:
+      -
+        - da5645d4-6604-427e-96f8-3d2acac6a8e2 # Subtitle
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - ff9faf4d-060f-4078-bd12-b478a0d6d086 # Icons Class
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 571eece9-cb80-4552-a33f-9537317c8124 # Body
+        -
+          __assoc__:
+            -
+              - width
+              - ''
   contentTable: '{{%stc_tableofcontent}}'
   fieldLayout: table
   maxRows: null

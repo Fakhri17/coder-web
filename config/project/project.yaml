@@ -1,4 +1,4 @@
-dateModified: 1699630003
+dateModified: 1699636699
 email:
   fromEmail: fakhricoffe@gmail.com
   fromName: Coder-Web
@@ -14,7 +14,7 @@ fs:
 meta:
   __names__:
     0b592af1-3215-43f0-8197-d8e73aeee7dd: Default # Default
-    0beff7b2-4667-4eb5-89e3-8fb0083cb6d4: 'Division Logo' # Division Logo
+    0beff7b2-4667-4eb5-89e3-8fb0083cb6d4: 'Division Logo Class' # Division Logo Class
     1d9ea0ea-8e61-4532-82d8-57929963a966: Coder-Web # Coder-Web
     1da5e5cf-595b-4825-a9e6-737890a78b7c: 'Table Of Content' # Table Of Content
     1dcf6b65-1c7f-4cca-af8c-eba87c4393b7: Coder-Web # Coder-Web
@@ -26,7 +26,7 @@ meta:
     56ac2769-bf4b-479e-89cb-6f9d12e26216: 'Member Photos' # Member Photos
     86a153c3-8af9-44ea-98b4-9e6ab2d06812: Instagram # Instagram
     093d1887-8655-409f-a8c2-ce25ed825931: Default # Default
-    571eece9-cb80-4552-a33f-9537317c8124: body # body
+    571eece9-cb80-4552-a33f-9537317c8124: Body # Body
     868df16e-1857-42c9-9640-36aaba6424a8: 'Nama Member' # Nama Member
     877b4643-df21-4f3f-a0df-3d4e48a5883d: Heading # Heading
     35826c90-ac96-495c-830e-e388778e32ae: Address # Address
@@ -39,7 +39,7 @@ meta:
     cafe3a36-41cb-4513-b63c-9cb7a1ea9555: Subheading # Subheading
     da5645d4-6604-427e-96f8-3d2acac6a8e2: Subtitle # Subtitle
     ee3bb186-f67e-436b-b002-3575a3002a13: Division # Division
-    f7d56ebf-8a70-409c-9292-78cc1a05a95e: Blog # Blog
+    f7d56ebf-8a70-409c-9292-78cc1a05a95e: News # News
     fb22f8e2-cb05-43ee-9f3a-7133912c9a40: Icons # Icons
     ff9faf4d-060f-4078-bd12-b478a0d6d086: 'Icons Class' # Icons Class
 plugins:

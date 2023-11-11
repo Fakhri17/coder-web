@@ -1,4 +1,4 @@
-changedFieldIndicator: 1554042213
+changedFieldIndicator: 1399326756
 field: 1da5e5cf-595b-4825-a9e6-737890a78b7c # Table Of Content
 fieldLayouts:
   ea5fad04-bfeb-4b53-bc8a-99219775b408:
@@ -32,7 +32,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 571eece9-cb80-4552-a33f-9537317c8124 # body
+            fieldUid: 571eece9-cb80-4552-a33f-9537317c8124 # Body
             instructions: null
             label: null
             required: false
@@ -46,13 +46,13 @@ fieldLayouts:
         uid: 253a82f6-1c77-424d-832b-64b165f8d874
         userCondition: null
 fields:
-  571eece9-cb80-4552-a33f-9537317c8124: # body
+  571eece9-cb80-4552-a33f-9537317c8124: # Body
     columnSuffix: tdgppata
     contentColumnType: text
     fieldGroup: null
     handle: body
     instructions: null
-    name: body
+    name: Body
     searchable: false
     settings:
       availableTransforms: ''
@@ -63,7 +63,7 @@ fields:
       manualConfig: ''
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: Simple.json
+      redactorConfig: null
       removeEmptyTags: false
       removeInlineStyles: false
       removeNbsp: false

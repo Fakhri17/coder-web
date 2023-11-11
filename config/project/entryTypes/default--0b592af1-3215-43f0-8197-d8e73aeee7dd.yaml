@@ -72,7 +72,7 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: f7d56ebf-8a70-409c-9292-78cc1a05a95e # Blog
+section: f7d56ebf-8a70-409c-9292-78cc1a05a95e # News
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

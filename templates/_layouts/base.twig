@@ -1,77 +1,110 @@
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coder Web</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coder Web</title>
 
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="{{ siteUrl }}assets/images/favicon.svg" type="image/svg" />
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="{{ siteUrl }}assets/images/favicon.svg" type="image/svg" />
 
-    <!-- ===== All CSS files ===== -->
-   <link rel="stylesheet" href="{{ siteUrl }}assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ siteUrl }}assets/css/animate.css" />
-    <link rel="stylesheet" href="{{ siteUrl }}assets/css/lineicons.css" />
-    <link rel="stylesheet" href="{{ siteUrl }}assets/css/ud-styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  
+
+  <!-- ===== All CSS files ===== -->
+  <link rel="stylesheet" href="{{ siteUrl }}assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{ siteUrl }}assets/css/animate.css" />
+  <link rel="stylesheet" href="{{ siteUrl }}assets/css/lineicons.css" />
+  <link rel="stylesheet" href="{{ siteUrl }}assets/css/ud-styles.css" />
+  <link rel="stylesheet" href="{{ siteUrl }}assets/css/custom.css" />
+
+</head>
+
+<body>
+  {% do craft.app.elements.eagerLoadElements(
+  className(siteInfo),
+  [siteInfo],
+  ['icons', 'gallery', 'tableOfContent']
+  ) %}
+  {% include "_includes/header.twig" %}
+  {% block content %}{% endblock %}
+  {% include "_includes/footer.twig" %}
+  <a href="#" class="back-to-top bg-red-custom p-2" id="back-to-top-button">
+    <iconify-icon class="icons-1 text-white" icon="fluent:chevron-up-12-filled"></iconify-icon>
+  </a>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+  <script src="{{ siteUrl }}assets/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ siteUrl }}assets/js/wow.min.js"></script>
+  <script src="{{ siteUrl }}assets/js/main.js"></script>
+  <script>
+    // ==== for menu scroll
+    const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+    pageLink.forEach((elem) => {
+      elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          offsetTop: 1 - 60,
+        });
+      });
+    });
+
+    // section menu active
+    function onScroll(event) {
+      const sections = document.querySelectorAll(".ud-menu-scroll");
+      const scrollPos =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+
+      for (let i = 0; i < sections.length; i++) {
+        const currLink = sections[i];
+        const val = currLink.getAttribute("href");
+        const refElement = document.querySelector(val);
+        const scrollTopMinus = scrollPos + 73;
+        if (
+          refElement.offsetTop <= scrollTopMinus &&
+          refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+        ) {
+          document
+            .querySelector(".ud-menu-scroll")
+            .classList.remove("active");
+          currLink.classList.add("active");
+        } else {
+          currLink.classList.remove("active");
+        }
+      }
+    }
+
+    window.document.addEventListener("scroll", onScroll);
+
+    // Swiper carousel
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
     
-    <link rel="stylesheet" href="{{ siteUrl }}assets/css/custom.css" />
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     
-  </head>
-  <body>
-    {% include "_includes/header.twig" %}
-    {% block content %}{% endblock %}
-    {% include "_includes/footer.twig" %}
-    <a href="#" class="back-to-top bg-red-custom p-2" id="back-to-top-button">
-      <iconify-icon class="icons-1 text-white" icon="fluent:chevron-up-12-filled"></iconify-icon>
-    </a>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="{{ siteUrl }}assets/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ siteUrl }}assets/js/wow.min.js"></script>
-    <script src="{{ siteUrl }}assets/js/main.js"></script>
-    <script>
-       // ==== for menu scroll
-       const pageLink = document.querySelectorAll(".ud-menu-scroll");
+    });
 
-       pageLink.forEach((elem) => {
-         elem.addEventListener("click", (e) => {
-           e.preventDefault();
-           document.querySelector(elem.getAttribute("href")).scrollIntoView({
-             behavior: "smooth",
-             offsetTop: 1 - 60,
-           });
-         });
-       });
- 
-       // section menu active
-       function onScroll(event) {
-         const sections = document.querySelectorAll(".ud-menu-scroll");
-         const scrollPos =
-           window.pageYOffset ||
-           document.documentElement.scrollTop ||
-           document.body.scrollTop;
- 
-         for (let i = 0; i < sections.length; i++) {
-           const currLink = sections[i];
-           const val = currLink.getAttribute("href");
-           const refElement = document.querySelector(val);
-           const scrollTopMinus = scrollPos + 73;
-           if (
-             refElement.offsetTop <= scrollTopMinus &&
-             refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-           ) {
-             document
-               .querySelector(".ud-menu-scroll")
-               .classList.remove("active");
-             currLink.classList.add("active");
-           } else {
-             currLink.classList.remove("active");
-           }
-         }
-       }
- 
-       window.document.addEventListener("scroll", onScroll);
-    </script>
-  </body>
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  </script>
+</body>
 
 </html>
