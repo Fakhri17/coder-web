@@ -214,3 +214,9 @@ body {
 .sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
   color: var(--red);
 }
+
+.ud-widget .ud-widget-socials a {
+  color: #fff;
+  font-size: 28px;
+}
+

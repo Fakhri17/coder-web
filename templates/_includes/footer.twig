@@ -14,31 +14,17 @@
         <div class="col-lg-3 col-md-6 col-12">
           <div class="ud-widget">
             <a href="index.html" class="ud-footer-logo">
-              <img src="{{siteUrl}}assets/images/logo/logo.svg" alt="logo" />
+              <img src="{{ siteUrl }}assets/images/coder-logo-putih.png" alt="logo" />
             </a>
-            <p class="ud-widget-desc">
-              We create digital experiences for brands and companies by
-              using technology.
-            </p>
-            <ul class="ud-widget-socials">
+            <ul class="ud-widget-socials mt-3">
               <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-facebook-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-twitter-filled"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/MusharofChy">
+                <a href="{{ siteInfo.instagram }}" target="_blank">
                   <i class="lni lni-instagram-filled"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/MusharofChy">
-                  <i class="lni lni-linkedin-original"></i>
+                <a href="{{ siteInfo.youtube }}" target="_blank">
+                  <i class="lni lni-youtube"></i>
                 </a>
               </li>
             </ul>
@@ -47,77 +33,37 @@
 
         <div class="col-lg-3 col-md-6 col-12">
           <div class="ud-widget">
-            <h5 class="ud-widget-title">About Us</h5>
+            <h5 class="ud-widget-title">Address</h5>
+            <p class="ud-widget-desc">
+              {{ siteInfo.address }}
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="ud-widget">
+            <h5 class="ud-widget-title">Useful Links</h5>
             <ul class="ud-widget-links">
               <li>
-                <a href="javascript:void(0)">Home</a>
+                <a href="https://www.telkom.co.id/" target="_blank">Telkom Indonesia</a>
               </li>
               <li>
-                <a href="javascript:void(0)">Features</a>
+                <a href="https://ypt.or.id/" target="_blank">Yayasan Pendidikan Telkom</a>
               </li>
               <li>
-                <a href="javascript:void(0)">About</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">Testimonial</a>
+                <a href="https://ittelkom-sby.ac.id/" target="_blank">IT Telkom Surabaya</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-12">
           <div class="ud-widget">
-            <h5 class="ud-widget-title">Features</h5>
+            <h5 class="ud-widget-title">Get in Touch</h5>
             <ul class="ud-widget-links">
               <li>
-                <a href="javascript:void(0)">How it works</a>
+                <a href="mailto:{{ siteInfo.email }}">{{ siteInfo.email }}</a>
               </li>
               <li>
-                <a href="javascript:void(0)">Privacy policy</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">Terms of service</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">Refund policy</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="ud-widget">
-            <h5 class="ud-widget-title">Our Products</h5>
-            <ul class="ud-widget-links">
-              <li>
-                <a
-                  href="https://lineicons.com/"
-                  rel="nofollow noopner"
-                  target="_blank"
-                  >Lineicons
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://ecommercehtml.com/"
-                  rel="nofollow noopner"
-                  target="_blank"
-                  >Ecommerce HTML</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://ayroui.com/"
-                  rel="nofollow noopner"
-                  target="_blank"
-                  >Ayro UI</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://graygrids.com/"
-                  rel="nofollow noopner"
-                  target="_blank"
-                  >Plain Admin</a
-                >
+                <a href="#">+ 62 838 7753 4525</a>
               </li>
             </ul>
           </div>
@@ -129,7 +75,7 @@
   <div class="ud-footer-bottom">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
           <ul class="ud-footer-bottom-left">
             <li>
               <a href="javascript:void(0)">Privacy policy</a>
@@ -142,10 +88,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <p class="ud-footer-bottom-right">
-            Designed and Developed by
-            <a href="https://uideck.com" rel="nofollow">UIdeck</a>
+            Copyright © {{ "now"|date("Y")}} CODER ITTelkom Surabaya. | Build with ❤️ by CODER team.
           </p>
         </div>
       </div>
