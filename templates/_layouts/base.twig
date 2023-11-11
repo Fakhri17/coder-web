@@ -5,13 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coder Web</title>
+  <meta name="title" content="Coder Web">
+  <meta name="description" content="Coder Web Team">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ siteUrl }}">
+  <meta property="og:title" content="Coder Web">
+  <meta property="og:description" content="Coder Web Team">
+  <meta property="og:image" content="{{ siteUrl }}assets/images/coder-logo-warna.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ siteUrl }}">
+  <meta property="twitter:title" content="Coder Web">
+  <meta property="twitter:description" content="Coder Web Team">
+  <meta property="twitter:image" content="{{ siteUrl }}assets/images/coder-logo-warna.png">
 
   <!--====== Favicon Icon ======-->
-  <link rel="shortcut icon" href="{{ siteUrl }}assets/images/favicon.svg" type="image/svg" />
+  <link rel="icon" href="{{ siteUrl }}assets/images/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  
+
 
   <!-- ===== All CSS files ===== -->
   <link rel="stylesheet" href="{{ siteUrl }}assets/css/bootstrap.min.css" />
@@ -93,12 +109,12 @@
       pagination: {
         el: '.swiper-pagination',
       },
-    
+
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    
+
     });
 
     const lightbox = GLightbox({
