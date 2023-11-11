@@ -15,9 +15,9 @@
 
     // === logo change
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/coder-logo-warna.png";
+      logo.src = "../assets/images/coder-logo-warna.png";
     } else {
-      logo.src = "assets/images/coder-logo-putih.png";
+      logo.src = "../assets/images/coder-logo-putih.png";
     }
 
     scrollFunction();

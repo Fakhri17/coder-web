@@ -1,0 +1,25 @@
+{% set data = {
+  item: []
+}|merge(data ?? {}) %}
+
+{% if data.item %}
+  <div class="col-lg-4 col-md-6">
+    <div class="ud-single-blog">
+      <div class="ud-blog-image">
+        <a href="{{ data.item.url }}">
+          {% set photoImage = data.item.featuredImage[0].url ?? "#{siteUrl}assets/images/blog/blog-01.jpg" %}
+          <img class="img-fluid" src="{{ photoImage }}" alt="blog" />
+        </a>
+      </div>
+      <div class="ud-blog-content">
+        <span class="ud-blog-date bg-coder">{{ data.item.dateCreated|date("M d, Y") }}</span>
+        <h3 class="ud-blog-title">
+          <a href="{{ data.item.url }}">
+            {{ data.item.title }}
+          </a>
+        </h3>
+        {{ data.item.summary|raw }}
+      </div>
+    </div>
+  </div>
+{% endif %}

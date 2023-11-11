@@ -10,6 +10,15 @@
   .all() 
 %}
 
+{% set newsList = craft.entries()
+  .section('news')
+  .orderBy('dateCreated ASC')
+  .with([
+    'featuredImage'
+  ])
+  .limit(3)
+%}
+
 <section class="ud-hero pb-7" id="home">
   <div class="container">
     <div class="row">
@@ -84,7 +93,7 @@
             <iconify-icon icon="{{ item.divisionLogoClass }}" style="font-size: 41px;"></iconify-icon>
           </div>
           <div class="ud-feature-content text-center">
-            <h3 class="ud-feature-title">{{ item.title}}</h3>
+            <h3 class="ud-feature-title">{{ item.title }}</h3>
             <div class="ud-feature-desc">
               {{ item.summary|raw }}
             </div>
@@ -146,27 +155,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="ud-single-blog">
-          <div class="ud-blog-image">
-            <a href="blog-details.html">
-              <img src="assets/images/blog/blog-01.jpg" alt="blog" />
-            </a>
-          </div>
-          <div class="ud-blog-content">
-            <span class="ud-blog-date bg-coder">Dec 22, 2023</span>
-            <h3 class="ud-blog-title">
-              <a href="blog-details.html">
-                Meet AutoManage, the best AI management tools
-              </a>
-            </h3>
-            <p class="ud-blog-desc">
-              Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.
-            </p>
-          </div>
-        </div>
-      </div>
+      {% for item in newsList %}
+        {% include "_includes/blog_item.twig" with { data : {
+          item: item
+        }} only %}
+      {% endfor %}
     </div>
   </div>
 </section>
