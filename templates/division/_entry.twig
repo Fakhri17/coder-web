@@ -1,0 +1,90 @@
+{% extends "_layouts/base.twig" %}
+
+{% block content %}
+  <section id="home"></section>
+  <section id="about"></section>
+  <section id="division"></section>
+  <section id="gallery"></section>
+  <section id="news"></section>
+
+  {% include "_includes/breadcrumb.twig" with { data : {
+    title: entry.title
+  }} %}
+
+  <section class="ud-team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-section-title mx-auto text-center">
+            <span class="text-primary-coder fw-bold">Our Team</span>
+            <h2>Meet The Team</h2>
+            <p>
+              {{ entry.summary|raw }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-4 col-sm-6">
+          <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
+            <div class="ud-team-image-wrapper">
+              <div class="ud-team-image">
+                <img src="{{ siteUrl }}assets/images/team/team-01.png" alt="team" />
+              </div>
+              <img
+                src="{{ siteUrl }}assets/images/team/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-1"
+              />
+            </div>
+            <div class="ud-team-info">
+              <h5>Evan Hadi</h5>
+              <h6>Ketua</h6>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6">
+          <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
+            <div class="ud-team-image-wrapper">
+              <div class="ud-team-image">
+                <img src="{{ siteUrl }}assets/images/team/team-01.png" alt="team" />
+              </div>
+              <img
+                src="{{ siteUrl }}assets/images/team/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-1"
+              />
+            </div>
+            <div class="ud-team-info">
+              <h5>Evan Hadi</h5>
+              <h6>Ketua</h6>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6">
+          <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
+            <div class="ud-team-image-wrapper">
+              <div class="ud-team-image">
+                <img src="{{ siteUrl }}assets/images/team/team-01.png" alt="team" />
+              </div>
+              <img
+                src="{{ siteUrl }}assets/images/team/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-1"
+              />
+            </div>
+            <div class="ud-team-info">
+              <h5>Evan Hadi</h5>
+              <h6>Ketua</h6>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+{% endblock %}
