@@ -9,7 +9,7 @@
       <div class="ud-blog-image">
         <a href="{{ data.item.url }}">
           {% set photoImage = data.item.featuredImage[0].url ?? "#{siteUrl}assets/images/blog/blog-01.jpg" %}
-          <img class="img-fluid" src="{{ photoImage }}" alt="blog" />
+          <img class="img-fluid lazy" data-src="{{ photoImage }}" alt="blog" />
         </a>
       </div>
       <div class="ud-blog-content">

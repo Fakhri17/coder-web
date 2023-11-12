@@ -47,12 +47,16 @@
   {% include "_includes/header.twig" %}
   {% block content %}{% endblock %}
   {% include "_includes/footer.twig" %}
+
   <a href="#" class="back-to-top bg-red-custom p-2" id="back-to-top-button">
     <iconify-icon class="icons-1 text-white" icon="fluent:chevron-up-12-filled"></iconify-icon>
   </a>
+
+
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.5/dist/lazyload.min.js"></script>
 
   <script src="{{ siteUrl }}assets/js/bootstrap.bundle.min.js"></script>
   <script src="{{ siteUrl }}assets/js/wow.min.js"></script>
@@ -102,8 +106,18 @@
 
     // Swiper carousel
     const swiper = new Swiper('.swiper', {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
       loop: true,
 
       pagination: {
@@ -119,6 +133,10 @@
 
     const lightbox = GLightbox({
       selector: '.glightbox'
+    });
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy"
+      // ... more custom settings?
     });
   </script>
 </body>

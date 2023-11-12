@@ -34,7 +34,8 @@
         <div class="ud-blog-details-image">
           {% set blogPhotos = entry.featuredImage[0].url ?? "#{siteUrl}assets/images/blog/blog-details-01.jpg" %}
           <img
-            src="{{ blogPhotos }}"
+            class="img-fluid lazy"
+            data-src="{{ blogPhotos }}"
             alt="blog details"
           />
           {# <div class="ud-blog-overlay">
@@ -71,7 +72,8 @@
             {{ entry.body|raw|retcon([
               ['attr', 'h1,h2,h4,h5,h6', { class: 'ud-blog-details-subtitle' }],
               ['attr', 'p', { class: 'ud-blog-details-para' }],
-              ['attr', 'img', { class: 'img-fluid d-block mx-auto' }],
+              ['renameAttr', 'img', { src: 'data-src' }],
+              ['attr', 'img', { class: 'img-fluid d-block mx-auto lazy' }],
           ]) }}
           </div>
           

@@ -42,7 +42,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6 col-12">
         <div class="ud-about-image wow fadeInLeft" data-wow-delay=".2s">
-          <img src="{{ siteUrl }}assets/images/about.png" alt="about-image" />
+          <img class="lazy" data-src="{{ siteUrl }}assets/images/about.png" alt="about-image" />
         </div>
       </div>
       <div class="col-lg-6 col-12">
@@ -125,7 +125,7 @@
         {% for item in siteInfo.gallery %}
           <div class="swiper-slide">
             <a href="{{item.url}}" class="glightbox">
-              <img class="" src="{{item.url}}" alt="">
+              <img class="lazy" data-src="{{item.url}}" alt="">
             </a>
             
           </div>
@@ -141,21 +141,21 @@
     
     </div>
     <div class="ud-brands mt-5 wow fadeInUp" data-wow-delay=".2s">
-      <div class="ud-title">
-        <h6>Our Partner</h6>
+      <div class="text-center mb-3">
+        <h2>Our Partner</h2>
       </div>
-      <div class="ud-brands-logo">
-        <div class="ud-single-logo">
-          <img src="{{ siteUrl }}assets/images/logo-playbox-1.png" alt="Playbox" />
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <img class="d-block mx-auto lazy" data-src="{{ siteUrl }}assets/images/logo-playbox-1.png" alt="Playbox" />
         </div>
-        <div class="ud-single-logo">
-          <img src="{{ siteUrl }}assets/images/logo-dojo.png" alt="Dojo Coder" />
+        <div class="col-6 col-lg-3">
+          <img class="d-block mx-auto lazy" data-src="{{ siteUrl }}assets/images/logo-dojo.png" alt="Dojo Coder" />
         </div>
-        <div class="ud-single-logo">
-          <img src="{{ siteUrl }}assets/images/logo-waow-1.png" alt="WAOW" />
+        <div class="col-6 col-lg-3">
+          <img class="d-block mx-auto lazy" data-src="{{ siteUrl }}assets/images/logo-waow-1.png" alt="WAOW" />
         </div>
-        <div class="ud-single-logo">
-          <img src="{{ siteUrl }}assets/images/logo-wezaa.png" alt="wEZZA" />
+        <div class="col-6 col-lg-3">
+          <img class="d-block mx-auto lazy" data-src="{{ siteUrl }}assets/images/logo-wezaa.png" alt="wEZZA" />
         </div>
         
       </div>
