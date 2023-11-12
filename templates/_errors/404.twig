@@ -1,0 +1,36 @@
+{% extends "_layouts/base.twig" %}
+
+{% block content %}
+  <section id="home"></section>
+  <section id="about"></section>
+  <section id="division"></section>
+  <section id="gallery"></section>
+  <section id="news"></section>
+
+  {% include "_includes/breadcrumb.twig" with { data : {
+    title: '404 NOT FOUND'
+  }} %}
+
+  <section class="ud-404">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-404-wrapper">
+            <div class="ud-404-content">
+              <h2 class="ud-404-title">404 - We couldn't find that page.</h2>
+              <h5 class="ud-404-subtitle">
+                Maybe you can find what you need here?
+              </h5>
+              <ul class="ud-404-links">
+                <li>
+                  <a href="{{ url('/')}}">Home</a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

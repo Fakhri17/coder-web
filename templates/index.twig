@@ -84,28 +84,30 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      {% for key, item in divisionList %}
-      <div class="col-lg-4 col-sm-6">
-        <div class="ud-single-feature cursor-pointer p-5 wow fadeInUp" data-wow-delay=".{{ key + 1 }}s">
-          <div class="ud-feature-icon mx-auto">
-            <iconify-icon icon="{{ item.divisionLogoClass }}" style="font-size: 41px;"></iconify-icon>
-          </div>
-          <div class="ud-feature-content text-center">
-            <h3 class="ud-feature-title">{{ item.title }}</h3>
-            <div class="ud-feature-desc">
-              {{ item.summary|raw }}
+    {% if divisionList|length %}
+      <div class="row">
+        {% for key, item in divisionList %}
+        <div class="col-lg-4 col-sm-6">
+          <div class="ud-single-feature cursor-pointer p-5 wow fadeInUp" data-wow-delay=".{{ key + 1 }}s">
+            <div class="ud-feature-icon mx-auto">
+              <iconify-icon icon="{{ item.divisionLogoClass }}" style="font-size: 41px;"></iconify-icon>
             </div>
-            <a href="{{ item.url }}" class="btn btn-outline-coder rounded">
-              Lihat Selengkapnya
-            </a>
+            <div class="ud-feature-content text-center">
+              <h3 class="ud-feature-title">{{ item.title }}</h3>
+              <div class="ud-feature-desc">
+                {{ item.summary|raw }}
+              </div>
+              <a href="{{ item.url }}" class="btn btn-outline-coder rounded">
+                Lihat Selengkapnya
+              </a>
+            </div>
           </div>
-        </div>
-      </div> 
-      {% endfor %}
-      
-      
-    </div>
+        </div> 
+        {% endfor %}
+      </div>
+    {% else %}
+      <h2 class="my-5">Belum ada Divisi</h2>
+    {% endif %}
   </div>
 </section>
 
@@ -172,14 +174,19 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      {% for key, item in newsList %}
-        {% include "_includes/blog_item.twig" with { data : {
-          key: key,
-          item: item
-        }} only %}
-      {% endfor %}
-    </div>
+    {% if newsList|length %}
+      <div class="row">
+        {% for key, item in newsList %}
+          {% include "_includes/blog_item.twig" with { data : {
+            key: key,
+            item: item
+          }} only %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <h2 class="my-5">Belum ada Berita</h2>
+    {% endif %}
+    
   </div>
 </section>
 
